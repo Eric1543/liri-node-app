@@ -123,7 +123,7 @@ function movie(){
 	logCommand();
 	// If user does not enter a movie show Mr. Nobody as default
 	if(liriData == undefined){
-		request('http://www.omdbapi.com/?t=Mr.Nobody&y=&plot=short&apikey=40e9cece', function(error, response, body){
+		request('https://www.omdbapi.com/?t=Mr.Nobody&y=&plot=short&apikey=40e9cece', function(error, response, body){
 		if(!error && response.statusCode === 200){
 			var movieData = JSON.parse(body);
 			console.log(movieData.Title);
@@ -140,7 +140,7 @@ function movie(){
 	// Show user's movie search with title, year, imdb rating, country, language, plot, and actors
 	// and log thme to a file
 	else{
-		request('http://www.omdbapi.com/?t=' + liriData + '&y=&plot=short&apikey=40e9cece', function(error, response, body){
+		request('https://www.omdbapi.com/?t=' + liriData + '&y=&plot=short&apikey=40e9cece', function(error, response, body){
 			if(!error && response.statusCode === 200){
 				var movieData = JSON.parse(body);
 				console.log(movieData.Title);

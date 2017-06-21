@@ -1,0 +1,24 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "Query apis for twitter, song, and movie data",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eric1543/liri-node-app.git"
+  },
+  "keywords": [
+    "twitter",
+    "spotify",
+    "imdb"
+  ],
+  "author": "Eric Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eric1543/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/Eric1543/liri-node-app#readme"
+}
